@@ -29,7 +29,7 @@ function AirportsList() {
       setAirports(response.data);
     } catch (error) {
       console.error('Error fetching airports:', error);
-      setAlert({ open: true, message: 'Failed to fetch airports.', severity: 'error' });
+      setAlert({ open: true, message: '-10000 AURA', severity: 'error' });
     }
   };
 

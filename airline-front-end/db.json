@@ -1,78 +1,88 @@
 {
-    "airports": [
-      {
-        "airport_id": 1,
-        "airport_name": "John F. Kennedy International Airport",
-        "city": "New York",
-        "country": "USA",
-        "IATA_code": "JFK",
-        "latitude": 40.6413,
-        "longitude": -73.7781
-      },
-      {
-        "airport_id": 2,
-        "airport_name": "Los Angeles International Airport",
-        "city": "Los Angeles",
-        "country": "USA",
-        "IATA_code": "LAX",
-        "latitude": 33.9416,
-        "longitude": -118.4085
-      }
-    ],
-    "routes": [
-      {
-        "route_id": 1,
-        "departure_airport": 1,
-        "arrival_airport": 2,
-        "waypoints": "Waypoint1, Waypoint2",
-        "distance": 3983.0
-      }
-    ],
-    "aircraft": [
-      {
-        "aircraft_id": 1,
-        "model": "Boeing 737",
-        "manufacturer": "Boeing",
-        "capacity": 215,
-        "range": 6570,
-        "airline_name": "Delta Air Lines"
-      }
-    ],
-    "navigation_parameters": [
-      {
-        "parameter_id": 1,
-        "parameter_name": "Tilt",
-        "unit": "degrees"
-      }
-    ],
-    "aircraft_navigation": [
-      {
-        "navigation_id": 1,
-        "aircraft_id": 1,
-        "parameter_id": 1,
-        "parameter_value": 5.0,
-        "installed_date": "2023-01-15",
-        "last_maintenance_date": "2023-06-20"
-      }
-    ],
-    "flights": [
-      {
-        "flight_id": 1,
-        "aircraft_id": 1,
-        "route_id": 1,
-        "departure_time": "2024-05-01T08:00:00",
-        "arrival_time": "2024-05-01T12:00:00",
-        "flight_duration": 4.0,
-        "status": "Scheduled"
-      }
-    ],
-    "maintenance_logs": [
-      {
-        "log_id": 1,
-        "aircraft_id": 1,
-        "maintenance_date": "2023-06-20",
-        "notes": "Routine engine check."
-      }
-    ]
-  }
-  
+  "aircraft": [
+    {
+      "aircraft_id": 1,
+      "model": "Boeing 737",
+      "manufacturer": "Boeing",
+      "capacity": 200,
+      "range": 5600,
+      "airline_name": "Airline A"
+    },
+    {
+      "aircraft_id": 2,
+      "model": "Airbus A320",
+      "manufacturer": "Airbus",
+      "capacity": 180,
+      "range": 6100,
+      "airline_name": "Airline B"
+    }
+  ],
+  "aircraft_navigation": [
+    {
+      "aircraft_id": 1,
+      "navigation_system_type": "GPS",
+      "installed_date": "2023-01-15",
+      "last_maintenance_date": "2024-04-15"
+    },
+    {
+      "aircraft_id": 2,
+      "navigation_system_type": "Inertial Navigation",
+      "installed_date": "2022-06-20",
+      "last_maintenance_date": "2024-04-20"
+    }
+  ],
+  "airports": [
+    {
+      "airport_id": 1,
+      "airport_name": "John F. Kennedy International Airport",
+      "city": "New York",
+      "country": "USA",
+      "IATA_code": "JFK",
+      "latitude": 40.6413,
+      "longitude": -73.7781
+    },
+    {
+      "airport_id": 2,
+      "airport_name": "Heathrow Airport",
+      "city": "London",
+      "country": "UK",
+      "IATA_code": "LHR",
+      "latitude": 51.4700,
+      "longitude": -0.4543
+    }
+  ],
+  "routes": [
+    {
+      "route_id": 1,
+      "departure_airport": 1,
+      "arrival_airport": 2,
+      "waypoints": "Waypoint1, Waypoint2",
+      "distance": 5540
+    },
+    {
+      "route_id": 2,
+      "departure_airport": 2,
+      "arrival_airport": 1,
+      "waypoints": "Waypoint3, Waypoint4",
+      "distance": 5540
+    }
+  ],
+  "flights": [
+    {
+      "flight_id": 1,
+      "aircraft_id": 1,
+      "route_id": 1,
+      "departure_time": "2024-05-01T08:00:00Z",
+      "arrival_time": "2024-05-01T12:00:00Z",
+      "flight_duration": 4.0
+    },
+    {
+      "flight_id": 2,
+      "aircraft_id": 2,
+      "route_id": 2,
+      "departure_time": "2024-05-02T09:00:00Z",
+      "arrival_time": "2024-05-02T13:00:00Z",
+      "flight_duration": 4.0
+    }
+  ]
+}

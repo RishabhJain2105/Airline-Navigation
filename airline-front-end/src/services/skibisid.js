@@ -2,18 +2,6 @@
 import axios from 'axios';
 
 const API_BASE_URL = 'http://127.0.0.1:8000'; // FastAPI server
-// Search Flights by Departure, Arrival, and Date Range
-export const searchFlights = (departure, arrival, start, end) => {
-    return axios.get(`${API_BASE_URL}/flights/departure-arrival-start-end`, {
-      params: {
-        departure: departure,
-        arrival: arrival,
-        start: start, // Format: YYYY-MM-DD
-        end: end,     // Format: YYYY-MM-DD
-      },
-    });
-  };
-  
 
 // Airports
 export const getAirports = () => axios.get(`${API_BASE_URL}/airports`);

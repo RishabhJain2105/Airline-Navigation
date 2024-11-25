@@ -21,9 +21,9 @@ import AddAircraft from './pages/Aircraft/AddAircraft';
 import EditAircraft from './pages/Aircraft/EditAircraft';
 
 // Navigation Parameters
-import NavigationParametersList from './pages/NavigationParameters/NavigationParametersList';
-import AddNavigationParameter from './pages/NavigationParameters/AddNavigationParameter';
-import EditNavigationParameter from './pages/NavigationParameters/EditNavigationParameter';
+// import NavigationParametersList from './pages/AircraftNavigation/NavigationParametersList';
+// import AddNavigationParameter from './pages/AircraftNavigation/AddNavigationParameter';
+// import EditNavigationParameter from './pages/AircraftNavigation/EditNavigationParameter';
 
 // Aircraft Navigation
 import AircraftNavigationList from './pages/AircraftNavigation/AircraftNavigationList';
@@ -36,9 +36,9 @@ import AddFlight from './pages/Flights/AddFlight';
 import EditFlight from './pages/Flights/EditFlight';
 
 // Maintenance Logs
-import MaintenanceLogsList from './pages/MaintenanceLogs/MaintenanceLogsList';
-import AddMaintenanceLog from './pages/MaintenanceLogs/AddMaintenanceLog';
-import EditMaintenanceLog from './pages/MaintenanceLogs/EditMaintenanceLog';
+// import MaintenanceLogsList from './pages/MaintenanceLogs/MaintenanceLogsList';
+// import AddMaintenanceLog from './pages/MaintenanceLogs/AddMaintenanceLog';
+// import EditMaintenanceLog from './pages/MaintenanceLogs/EditMaintenanceLog';
 
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -69,9 +69,9 @@ function App() {
           <Route path="/aircraft/edit/:id" element={<EditAircraft />} />
 
           {/* Navigation Parameters Routes */}
-          <Route path="/navigation-parameters" element={<NavigationParametersList />} />
-          <Route path="/navigation-parameters/add" element={<AddNavigationParameter />} />
-          <Route path="/navigation-parameters/edit/:id" element={<EditNavigationParameter />} />
+          {/* <Route path="/aircraft-navigation/navigation-parameters" element={<NavigationParametersList />} />
+          <Route path="/aircraft-navigation/navigation-parameters/add" element={<AddNavigationParameter />} />
+          <Route path="/aircraft-navigation/navigation-parameters/edit/:id" element={<EditNavigationParameter />} /> */}
 
           {/* Aircraft Navigation Routes */}
           <Route path="/aircraft-navigation" element={<AircraftNavigationList />} />
@@ -84,9 +84,9 @@ function App() {
           <Route path="/flights/edit/:id" element={<EditFlight />} />
 
           {/* Maintenance Logs Routes */}
-          <Route path="/maintenance-logs" element={<MaintenanceLogsList />} />
+          {/* <Route path="/maintenance-logs" element={<MaintenanceLogsList />} />
           <Route path="/maintenance-logs/add" element={<AddMaintenanceLog />} />
-          <Route path="/maintenance-logs/edit/:id" element={<EditMaintenanceLog />} />
+          <Route path="/maintenance-logs/edit/:id" element={<EditMaintenanceLog />} /> */}
         </Routes>
         <Footer />
       </Router>

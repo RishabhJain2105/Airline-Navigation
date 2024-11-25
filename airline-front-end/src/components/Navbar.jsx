@@ -9,10 +9,10 @@ const navItems = [
   { text: 'Airports', path: '/airports' },
   { text: 'Routes', path: '/routes' },
   { text: 'Aircraft', path: '/aircraft' },
-  { text: 'Navigation Parameters', path: '/navigation-parameters' },
+//   { text: 'Navigation Parameters', path: '/navigation-parameters' },
   { text: 'Aircraft Navigation', path: '/aircraft-navigation' },
   { text: 'Flights', path: '/flights' },
-  { text: 'Maintenance Logs', path: '/maintenance-logs' },
+//   { text: 'Maintenance Logs', path: '/maintenance-logs' },
 ];
 
 function Navbar() {
@@ -60,7 +60,7 @@ function Navbar() {
               color: 'inherit',
             }}
           >
-            Airline Management
+            Airline Navigation
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
